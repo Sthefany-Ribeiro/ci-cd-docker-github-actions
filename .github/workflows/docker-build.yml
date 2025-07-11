@@ -21,11 +21,11 @@ jobs:
 
       - name: Build da imagem Docker
         run: |
-          docker build -t sthefanydocker/ci-cd-flask:latest .
-          docker tag sthefanydocker/ci-cd-flask:latest sthefanydocker/ci-cd-flask:${{ github.sha }}
+          docker build -t sthefanyribeiro2023/ci-cd-flask:latest .
+          docker tag sthefanyribeiro2023/ci-cd-flask:latest sthefanyribeiro2023/ci-cd-flask:${{ github.sha }}
 
       - name: Push da imagem Docker
         run: |
-          docker push sthefanydocker/ci-cd-flask:latest
-          docker push sthefanydocker/ci-cd-flask:${{ github.sha }}
+          docker push sthefanyribeiro2023/ci-cd-flask:latest
+          docker push sthefanyribeiro2023/ci-cd-flask:${{ github.sha }}
 
